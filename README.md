@@ -1,25 +1,11 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-# Ruby-On-Rails-Tutorial
+If Turbo doesn't work! \
+Aka data: { turbo_confirm: "Are you sure?" } doesn't work \
+Add this to the body in application.html.erb
+```erb
+<body>
+  ...
+  <%= javascript_include_tag "turbo", type: "module" %>
+</body>
+```
